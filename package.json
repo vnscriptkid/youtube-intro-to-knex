@@ -1,5 +1,5 @@
 {
-  "name": "knexVideoRepo",
+  "name": "todos-knex",
   "version": "1.0.0",
   "description": "",
   "main": "knexfile.js",
@@ -7,16 +7,17 @@
     "body-parser": "^1.17.1",
     "cors": "^2.8.3",
     "express": "^4.15.2",
-    "knex": "^0.12.9",
+    "knex": "^0.21.1",
     "morgan": "^1.8.1",
-    "pg": "^6.1.5"
+    "pg": "^8.0.3"
   },
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node server.js",
+    "migrate:dev": "knex migrate:latest --env development"
   },
   "keywords": [],
-  "author": "",
+  "author": "vnscriptkid",
   "license": "ISC"
 }
