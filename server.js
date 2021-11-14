@@ -1,10 +1,9 @@
 var express = require("express");
 var bodyParser = require("body-parser");
 var port = process.env.PORT || 8001;
-var knexConfig = require("./knexfile");
-var knex = require("knex")(knexConfig);
 var cors = require("cors");
 var logger = require("morgan");
+var knex = require("./db");
 
 var app = express();
 
